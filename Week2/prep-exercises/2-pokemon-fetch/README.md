@@ -10,6 +10,15 @@ The expected behaviour is as follows:
 - When you press the button with the checkbox **checked** an HTTP error message will be rendered on the page.
 ## Things to think about
 
-- If you look at the `index.html` you can see our error rendering is put into a regular `div` element, but our pokemon json is put into a `pre` element. Why is that?
+- If you look at the `index.html` you can see our error rendering is put into a regular `div` element, but our pokemon json is put into a `pre` element. Why is that?   
+  JSON data, especially when formatted with JSON.stringify(pokemons, null, 2), has line breaks and indentation that make it easier to read, which <pre> maintains.
+
+
 - The comments say to handle the error in the main function. What do you think the advantages are of doing it this way? What about if you would do the error handling in the `fetchJSON` function?
+
+This approach makes fetchJSON reusable.
+
+
 - Some students ask us why not just put `try/catch` blocks around the main function and have that as the place to catch all errors. Why do you think we do not suggest doing this?
+
+because it would catch errors from any part of main, making it harder to pinpoint
