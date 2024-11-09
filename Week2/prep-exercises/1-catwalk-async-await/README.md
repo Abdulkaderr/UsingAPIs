@@ -8,4 +8,4 @@ The `dance` and `walk` functions are identical to last week, but our `catWalk` f
 
 - Do you feel this version is easier to read than the version you made in the previous week?
 - Is this version more efficient or not or is there no difference?
-- Async/await makes the code wait until the Promise is resolved. Does this then also block any other functions from running? Why or why not?
+- Async/await makes the code wait until the Promise is resolved. Does this then also block any other functions from running? Why or why not? yes  because we use while 
